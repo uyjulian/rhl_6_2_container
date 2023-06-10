@@ -163,4 +163,19 @@ ENV \
     LANG="C.UTF-8" \
     LC_ALL="C.UTF-8"
 
+LABEL \
+    org.opencontainers.image.source="https://github.com/uyjulian/rhl_6_2_container" \
+    maintainer="Julian Uy <https://uyjulian.github.io/>" \
+    vendor="uyjulian" \
+    cmd="docker container run --interactive --rm --tty ghcr.io/uyjulian/rhl_6_2_container:latest" \
+    org.label-schema.schema-version="1.0" \
+    org.label-schema.name="ghcr.io/uyjulian/rhl_6_2_container" \
+    org.label-schema.description="Red Hat Linux 6.2 in a container" \
+    org.label-schema.url="https://uyjulian.github.io/" \
+    org.label-schema.vcs-url="https://github.com/uyjulian/rhl_6_2_container" \
+    org.label-schema.vendor="uyjulian" \
+    org.label-schema.version="6.2" \
+    org.label-schema.docker.cmd="docker container run --interactive --rm --tty ghcr.io/uyjulian/rhl_6_2_container:latest" \
+    org.label-schema.docker.cmd.test="docker container run --interactive --rm --tty ghcr.io/uyjulian/rhl_6_2_container:latest /bin/true"
+
 CMD ["/bin/bash"]
