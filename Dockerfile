@@ -170,7 +170,7 @@ LABEL \
     cmd="docker container run --interactive --rm --tty ghcr.io/uyjulian/rhl_6_2_container:latest" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.name="ghcr.io/uyjulian/rhl_6_2_container" \
-    org.label-schema.description="Red Hat Linux 6.2 in a container" \
+    org.label-schema.description="Red Hat Linux 6.2 Container" \
     org.label-schema.url="https://uyjulian.github.io/" \
     org.label-schema.vcs-url="https://github.com/uyjulian/rhl_6_2_container" \
     org.label-schema.vendor="uyjulian" \
