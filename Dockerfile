@@ -35,7 +35,7 @@ COPY --from=0 "${__WORK_DIR__}" "${__WORK_DIR__}"
 RUN mkdir -p "${__BUILD_DIR__}/"/var/lib/rpm && \
     rpm --root "${__BUILD_DIR__}/" --initdb && \
     cd "${__WORK_DIR__}" && \
-    rpm --verbose --root "${__BUILD_DIR__}/" --install --ignorearch *.i386.rpm *.noarch.rpm
+    cat packages.txt | sort | xargs rpm --verbose --root "${__BUILD_DIR__}/" --install --ignorearch
 
 # Third stage of Dockerfile
 FROM scratch
